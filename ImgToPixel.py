@@ -1,7 +1,7 @@
 import cv2
 
 # Input image
-img = cv2.imread('messi.jpg')
+img = cv2.imread('image.jpg')
 
 # Get input size
 height, width = img.shape[:2]
@@ -18,7 +18,7 @@ output = cv2.resize(temp, (width, height), interpolation=cv2.INTER_NEAREST)
 cv2.imshow('Input', img)
 cv2.imshow('Output', output)
 
-cv2.imwrite("PixelLena.png", output)
+cv2.imwrite("pixel_image.png", output)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
